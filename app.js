@@ -1,3 +1,4 @@
+// Made By - Priyanshu Ranjan
 
 const express = require('express');
 const nodemailer = require('nodemailer');
@@ -18,12 +19,12 @@ app.post("/send_email", function (req, res) {
     var to = req.body.to;
     var subject = req.body.subject;
     var message = req.body.message;
-    // Create a transporter with your email account details
+    // Creating a transporter with your email account details
     let transporter = nodemailer.createTransport({
       service: 'gmail',
         auth: {
             user: "priyanshuranjan232@gmail.com",
-            pass: "ryznumecnicybdqx",
+            pass: "Generate Your Own Password",
         }
     });
 
